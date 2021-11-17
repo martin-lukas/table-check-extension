@@ -5,10 +5,7 @@ module.exports = {
         test: ".src/test.js "
         // tableCheckboxes: "./src/ui-extensions/table-checkboxes/tableCheckboxes.ts",
     },
-    mode: "development",
-    devServer: {
-        port: 3000
-    },
+    mode: "production",
     // module: {
     //     rules: [
     //         {
