@@ -4,8 +4,19 @@
   "author": "Martin Lukáš",
   "license": "ISC",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx webpack serve --config config/webpack.config.dev.js",
+    "build": "npx webpack --config config/webpack.config.prod.js"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.164",
+    "jest": "^27.3.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.3",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
   },
   "browserslist": {
     "production": [
