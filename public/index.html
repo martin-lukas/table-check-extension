@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Table Check Extension</title>
-        <script src="/test.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <h1>Hello</h1>
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <title>Table Checkboxes Test</title>
+  <script src="/test.js"></script>
+  <style>
+    .border, .border th, .border td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    .bigger-font {
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Table without thead header</h1>
+  <table class="border bigger-font">
+    <tbody>
+      <tr>
+        <td>Word</td>
+        <td>Meaning</td>
+      </tr>
+      <tr>
+        <td>tady</td>
+        <td>here</td>
+      </tr>
+      <tr>
+        <td>tam</td>
+        <td>there</td>
+      </tr>
+      <tr>
+        <td>zde</td>
+        <td>yogi</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1>Table with thead header</h1>
+  <table class="border bigger-font">
+    <thead>
+      <tr>
+        <th>Word</th>
+        <th>Meaning</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>tady</td>
+        <td>here</td>
+      </tr>
+      <tr>
+        <td>tam</td>
+        <td>there</td>
+      </tr>
+      <tr>
+        <td>zde</td>
+        <td>yogi</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
 </html>

@@ -4,11 +4,11 @@ module.exports = {
     mode: "development",
     devServer: {
         static: './public',
-        open: true,
+        open: false,
         hot: true
     },
     entry: {
-        test: "./src/test.js"
+        test: "./src/test.ts"
     },
     module: {
         rules: [
@@ -20,6 +20,11 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.tsx?$/,
+                use: "ts-loader",
+                exclude: /node_modules/,
             }
         ]
     },
