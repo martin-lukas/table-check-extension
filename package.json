@@ -9,27 +9,12 @@
     "serve": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
-  "babel": {
-    "presets": ["@babel/preset-env"]
-  },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "babel-loader": "^8.2.3",
-    "webpack": "^5.53.0",
+    "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.5.0"
+    "webpack-dev-server": "^4.6.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "progress-webpack-plugin": "^1.0.12"
   }
 }

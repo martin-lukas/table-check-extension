@@ -1,3 +1,5 @@
+import hi2 from "./test";
+
 const CHECKBOX_CLASS = "checkbox-known";
 const CHECKBOXES_LOCAL_STORAGE_ID = "checkboxesKnown";
 
@@ -11,6 +13,7 @@ let rowBgColor = DEFAULT_ROW_BG_COLOR;
 
 window.onload = () => {
     console.log("Running script...");
+    hi2();
     const handleTableClick = (event) => {
         const tableElem = event.target.closest("table");
         if (!tableElem) {
