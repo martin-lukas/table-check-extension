@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+</head>
+
+<body>
+    <button id="my-button">Click me for effects</button>
+    <button id="reset-button">Reset stuff</button>
+    <script>
+        const controller = new AbortController();
+        const button = document.querySelector("#my-button");
+        button.addEventListener("click", () => console.log("hi, i'm first listener"), {signal: controller.signal});
+        button.addEventListener("click", () => console.log("hi, i'm second listener"), {signal: controller.signal});
+
+        const reset = document.querySelector("#reset-button");
+        reset.addEventListener("click", () => {
+            controller.abort();
+        });
+    </script>
+</body>
+
+</html>
